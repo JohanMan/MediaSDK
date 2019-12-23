@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.johan.video.record.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/take_button_top_bottom"
+        android:background="#50ffffff"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/big_button_size"
+                android:layout_height="@dimen/big_button_size"
+                android:src="@drawable/icon_shift"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:onClick="shift"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/take_button_size"
+            android:layout_height="@dimen/take_button_size"
+            android:src="@drawable/icon_take"
+            android:clickable="true"
+            android:onClick="take"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/big_button_size"
+                android:layout_height="@dimen/big_button_size"
+                android:src="@drawable/icon_picture"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:onClick="picture"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/option_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/button_layout"
+        android:paddingTop="@dimen/option_item_top_bottom"
+        android:paddingBottom="@dimen/option_item_top_bottom"
+        android:background="#50ffffff"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/option_item_beauty"
+            style="@style/OptionItem"
+            android:text="美颜"
+            android:clickable="true"
+            android:onClick="selectBeauty"
+            />
+
+        <TextView
+            android:id="@+id/option_item_watermark"
+            style="@style/OptionItem"
+            android:text="贴图"
+            android:clickable="true"
+            android:onClick="selectWatermark"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

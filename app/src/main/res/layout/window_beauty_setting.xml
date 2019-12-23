@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_space">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/beauty_item_height"
+            android:paddingLeft="@dimen/layout_space"
+            android:paddingRight="@dimen/layout_space"
+            android:gravity="center"
+            android:textSize="@dimen/beauty_item_text_size"
+            android:textColor="@color/colorPrimary"
+            android:text="磨皮"
+            android:background="@drawable/setting_option_bg"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/beauty_item_height"
+            android:background="@drawable/setting_option_bg"
+            android:layout_marginLeft="@dimen/layout_space">
+
+            <com.johan.media.view.CustomSeekBar
+                android:id="@+id/opacity_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_space"
+                android:layout_marginRight="@dimen/layout_space"
+                app:min="0"
+                app:max="10"
+                app:line_color="@color/colorPrimary"
+                app:circle_radius="12dp"
+                app:circle_color="@color/colorPrimary"
+                app:text_color="@color/colorPrimary"
+                app:circle_text_color="@android:color/white"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/layout_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/beauty_item_height"
+            android:paddingLeft="@dimen/layout_space"
+            android:paddingRight="@dimen/layout_space"
+            android:gravity="center"
+            android:textSize="@dimen/beauty_item_text_size"
+            android:textColor="@color/colorPrimary"
+            android:text="美白"
+            android:background="@drawable/setting_option_bg"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/beauty_item_height"
+            android:background="@drawable/setting_option_bg"
+            android:layout_marginLeft="@dimen/layout_space">
+
+            <com.johan.media.view.CustomSeekBar
+                android:id="@+id/brightness_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_space"
+                android:layout_marginRight="@dimen/layout_space"
+                app:min="0"
+                app:max="10"
+                app:line_color="@color/colorPrimary"
+                app:circle_radius="12dp"
+                app:circle_color="@color/colorPrimary"
+                app:text_color="@color/colorPrimary"
+                app:circle_text_color="@android:color/white"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/layout_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/beauty_item_height"
+            android:paddingLeft="@dimen/layout_space"
+            android:paddingRight="@dimen/layout_space"
+            android:gravity="center"
+            android:textSize="@dimen/beauty_item_text_size"
+            android:textColor="@color/colorPrimary"
+            android:text="红润"
+            android:background="@drawable/setting_option_bg"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/beauty_item_height"
+            android:background="@drawable/setting_option_bg"
+            android:layout_marginLeft="@dimen/layout_space">
+
+            <com.johan.media.view.CustomSeekBar
+                android:id="@+id/tone_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_space"
+                android:layout_marginRight="@dimen/layout_space"
+                app:min="0"
+                app:max="10"
+                app:line_color="@color/colorPrimary"
+                app:circle_radius="10dp"
+                app:circle_color="@color/colorPrimary"
+                app:text_color="@color/colorPrimary"
+                app:circle_text_color="@android:color/white"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

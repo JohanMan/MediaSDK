@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="WelcomeTheme" parent="FullTheme">
+        <item name="android:windowBackground">@drawable/welcome_background</item>
+    </style>
+
+    <style name="OptionItem">
+        <item name="android:layout_width">@dimen/option_item_width</item>
+        <item name="android:layout_height">@dimen/option_item_height</item>
+        <item name="android:layout_marginLeft">@dimen/layout_space</item>
+        <item name="android:layout_marginRight">@dimen/layout_space</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/option_item_text_size</item>
+        <item name="android:textColor">@drawable/option_item_text_color</item>
+        <item name="android:background">@drawable/option_item_bg</item>
+    </style>
+
+</resources>

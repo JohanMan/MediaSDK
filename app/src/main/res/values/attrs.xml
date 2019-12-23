@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomSeekBar">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="text_color" format="color" />
+        <attr name="line_color" format="color" />
+        <attr name="circle_color" format="color" />
+        <attr name="circle_text_color" format="color" />
+        <attr name="circle_radius" format="dimension" />
+    </declare-styleable>
+
+</resources>

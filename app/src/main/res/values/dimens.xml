@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="take_button_size">96dp</dimen>
+    <dimen name="take_button_top_bottom">30dp</dimen>
+    <dimen name="big_button_size">50dp</dimen>
+    <dimen name="option_item_width">36dp</dimen>
+    <dimen name="option_item_height">30dp</dimen>
+    <dimen name="option_item_text_size">10dp</dimen>
+    <dimen name="option_item_top_bottom">10dp</dimen>
+    <dimen name="option_item_corner">3dp</dimen>
+    <dimen name="custom_seek_bar_text_size">14sp</dimen>
+    <dimen name="setting_option_corner">5dp</dimen>
+    <dimen name="beauty_item_height">32dp</dimen>
+    <dimen name="beauty_item_text_size">12dp</dimen>
+    <dimen name="line_width">1dp</dimen>
+    <dimen name="layout_space">10dp</dimen>
+    <dimen name="content_text_size">16sp</dimen>
+    <dimen name="tip_text_size">14sp</dimen>
+
+</resources>
